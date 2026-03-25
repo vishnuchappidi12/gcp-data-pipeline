@@ -1,4 +1,5 @@
 def transform(df):
-    df["amount"] = df["amount"] * 1.1  # add 10% tax
-    print("Data Transformed")
+    print("[LOG] Starting transformation...")
+    df["amount"] = df["amount"] * 1.1
+    print("[LOG] Transformation completed")
     return df
